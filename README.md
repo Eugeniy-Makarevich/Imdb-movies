@@ -1,5 +1,6 @@
 # Imdb-movies
 [Not quite study] Top 250 imdb movies  
+Visualization of best movies according to imdb database  
 
 List of content:  
 top250_imdb.pbix - visualization in Power BI;  
@@ -10,4 +11,4 @@ movies_main.csv,movies_vote_to_csv.csv,movies_misc.csv - csv files, result of ru
 imdb250_powerbi_regexscript.py - aux script with reg.expressions for Power BI report;    
 genres_wordcloud.py - aux script with wordcloud visualization for Power BI report;    
 
-Visualization of best movies according to imdb database.   
+.   
