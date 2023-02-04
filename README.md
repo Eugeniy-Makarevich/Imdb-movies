@@ -8,7 +8,7 @@
 + movies_main.csv,movies_vote_to_csv.csv,movies_misc.csv - csv files, result of running main script;    
 + imdb250_powerbi_regexscript.py - aux script with reg.expressions for Power BI report;    
 + genres_wordcloud.py - aux script with wordcloud visualization for Power BI report; 
-   
 
+### [Not quite study][Python][Power BI]
 
 .   
