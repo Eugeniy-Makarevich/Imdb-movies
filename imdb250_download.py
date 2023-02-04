@@ -1,5 +1,7 @@
+# import modules
 import  imdb,pickle 
 
+# create connection object
 ia = imdb.Cinemagoer()
 
 # infosets to download

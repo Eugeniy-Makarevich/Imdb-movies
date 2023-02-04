@@ -1,4 +1,4 @@
-
+# import modules
 import pickle
 from imdb250_func import *    # all functions in dedicated file
 
@@ -13,11 +13,9 @@ columns = ['imdbID','original title','year','top 250 rank','rating',
 # export main info to csv
 movies_to_csv(top250_movies,'movies_main',columns)
 
-
 # export additional info
 columns = ['imdbID','countries']
 movies_to_csv(top250_movies,'movies_misc',columns)
-
 
 # export vote details
 movies_vote_to_csv(top250_movies,'movies_vote_to_csv')

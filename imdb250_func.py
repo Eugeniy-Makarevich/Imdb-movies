@@ -1,3 +1,4 @@
+# import modules
 import os,csv
 
 # function exports movie objects to csv
@@ -14,18 +15,19 @@ def movies_to_csv(my_movies,file_name,attr):
     f.close()
     
 # function exports movies vote details to csv
-
+# takes list of movie objects, file_name
 def movies_vote_to_csv(my_movies,file_name): 
-# constructing header
+# construct header
     votes = [key+' votes' for key in my_movies[0]['demographics'].keys()]
     rating = [key+' rating' for key in my_movies[0]['demographics'].keys()]
     number_of_votes =  my_movies[0]['number of votes'].keys()
     header = votes+rating+list(number_of_votes)
+# write header
     path = os.path.join(os.getcwd(),file_name+'.csv')
     f = open(path, 'w', encoding='UTF8', newline='')
     writer = csv.writer(f)  
     writer.writerow(['imdbID']+header)
-# constructing row
+# construct and write row
     for movie in my_movies:
         row_votes = [movie['demographics'][key]['votes'] 
                for key in movie['demographics'].keys()]
